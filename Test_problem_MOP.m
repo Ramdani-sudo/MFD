@@ -359,17 +359,6 @@ case 23 % MOQP-1 [Leyffer2025]
             b = [b; LB'; UB'];
             Optimization_Type = 'min';
             Objective_Function_Type = 'Quadratic';
-% %         case 26 
-% %     funcs_obj={@(x) (x(1)-5)^2+(x(2)-3)^2;@(x) (x(1)+4)^2+(x(2)-3)^2};
-% % %     A = [ -2 -1; 1 -1; 1 0; 0 1; -1 0; 0 -1; -5 4;1 1];
-% % %     b = [ -4; 5; 8; 8; 0; 0; 30;12];
-% % A=[2 3;-1 3;2 -1;-eye(2)];
-% % b = [ 18; 9;10; 0; 0];
-% %  LB=[0 0];
-% %    UB=[];
-% % %     UB=[8 8];
-Optimization_Type = 'min';
-            Objective_Function_Type = 'Quadratic';
         otherwise
             error('Problem %d is not defined. Please choose r between 1-25.', r);
     end
